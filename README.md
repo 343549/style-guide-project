@@ -24,3 +24,4 @@ python -m mkdocs build --strict
 Создайте репозиторий `style-guide-project` на GitHub, загрузите файлы, включите Settings → Pages → Source: GitHub Actions. Workflow публикует сайт после успешного push в main. В файле `mkdocs.yml` замените учебный site_url на настоящий адрес.
 
 **Статус:** проект подготовлен локально; удалённый репозиторий, PR, рецензирование и деплой должны быть выполнены в вашем аккаунте.
+Документация LearnPath публикуется через GitHub Pages.
