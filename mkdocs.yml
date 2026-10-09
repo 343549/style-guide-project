@@ -1,0 +1,17 @@
+site_name: Стайлгайд LearnPath
+site_description: Правила разработки учебной документации
+site_url: https://example.github.io/style-guide-project/
+nav:
+  - Главная: index.md
+  - Правила:
+      - Язык и терминология: language.md
+      - Структура и оформление: formatting.md
+      - Шаблоны документов: patterns.md
+      - Точность и сопровождение: quality.md
+      - Доступность текста: accessibility.md
+  - Примеры:
+      - Как начать урок: examples/start-lesson.md
+      - FAQ: examples/faq.md
+theme:
+  name: mkdocs
+  locale: ru
