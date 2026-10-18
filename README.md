@@ -1,6 +1,10 @@
 # style-guide-project
 
-Учебный проект Docs as Code: руководство по стилю документации условной платформы LearnPath.
+Учебный проект Docs as Code: руководство по стилю документации условной
+платформы LearnPath. Руководство содержит правила языка, структуры,
+оформления, доступности и проверки качества, а также примеры их применения.
+
+Опубликованная версия: <https://343549.github.io/style-guide-project/>.
 
 ## Локальный запуск
 
@@ -19,9 +23,18 @@ python -m pymarkdown --config .pymarkdown.json scan --recurse docs README.md CON
 python -m mkdocs build --strict
 ```
 
+## Структура руководства
+
+- `docs/language.md` — язык, терминология, даты и названия интерфейса;
+- `docs/formatting.md` — структура инструкций и оформление Markdown;
+- `docs/instruction.md` — подробные правила разработки инструкций;
+- `docs/quality.md` — точность, безопасность и сопровождение;
+- `docs/accessibility.md` — требования доступности текста;
+- `docs/testing.md` — проверка правил на двух документах;
+- `docs/examples/` — готовые примеры.
+
 ## Публикация
 
-Создайте репозиторий `style-guide-project` на GitHub, загрузите файлы, включите Settings → Pages → Source: GitHub Actions. Workflow публикует сайт после успешного push в main. В файле `mkdocs.yml` замените учебный site_url на настоящий адрес.
-
-**Статус:** проект подготовлен локально; удалённый репозиторий, PR, рецензирование и деплой должны быть выполнены в вашем аккаунте.
-Документация LearnPath публикуется через GitHub Pages.
+Workflow `Documentation` проверяет Markdown и выполняет строгую сборку MkDocs
+при каждом Pull Request в `main`. После слияния он публикует сайт через GitHub
+Pages. Изменения правил доступности прошли ревью в Pull Request № 1.
